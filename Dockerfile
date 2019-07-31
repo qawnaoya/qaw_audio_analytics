@@ -16,4 +16,4 @@ RUN echo "now building..." && \
     git clone https://github.com/r9y9/pyreaper && \
     cd pyreaper && \
     git submodule update --init --recursive && \
-    python setup.py develop
+    python setup.py install

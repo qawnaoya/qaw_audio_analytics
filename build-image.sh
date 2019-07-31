@@ -1,1 +1,1 @@
-sudo docker build -t nikeda/audio_analytics:0.0.6 .
+sudo docker build -t nikeda/audio_analytics:0.0.7 .
