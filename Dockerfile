@@ -1,4 +1,5 @@
 FROM jupyter/scipy-notebook
+USER root
 LABEL maintainer="Naoya Ikeda <n_ikeda@hotmail.com>"
 COPY azcopy_linux_amd64_10.2.1/azcopy /usr/local/bin
 RUN echo "now building..." && \
