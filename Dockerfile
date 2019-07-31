@@ -8,4 +8,6 @@ RUN echo "now building..." && \
     conda install -c conda-forge librosa && \
     conda install rise -y && \
     jupyter-nbextension install rise --py --sys-prefix && \
-    jupyter-nbextension enable rise --py --sys-prefix
+    jupyter-nbextension enable rise --py --sys-prefix && \
+    pip install pyworld && \
+    pip install pysptk
