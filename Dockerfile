@@ -13,6 +13,7 @@ RUN echo "now building..." && \
     jupyter-nbextension enable rise --py --sys-prefix && \
     pip install pyworld && \
     pip install pysptk && \
+    pip install essentia && \
     git clone https://github.com/r9y9/pyreaper && \
     cd pyreaper && \
     git submodule update --init --recursive && \
