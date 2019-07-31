@@ -2,8 +2,8 @@ FROM jupyter/scipy-notebook
 USER root
 LABEL maintainer="Naoya Ikeda <n_ikeda@hotmail.com>"
 COPY azcopy_linux_amd64_10.2.1/azcopy /usr/local/bin
-WORKDIR /root
 RUN echo "now building..." && \
+    cd /root && \
     apt update && \
     apt install -y vim && \
     conda update -n base -c defaults conda -y && \
